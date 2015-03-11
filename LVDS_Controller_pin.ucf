@@ -1,0 +1,30 @@
+ //100Mhz Onboard Clock signal
+ NET "clk_in"   LOC = "L15"; # Bank = 1, Pin name = IO_L42P_GCLK7_M1UDM, Type = GCLK, Sch name = GCLK
+ 
+ //Color Switches
+ NET "green_switch" LOC = "A10"; # Bank = 0, Pin name = IO_L37N_GCLK12,      	Sch name = SW0
+ NET "blue_switch" LOC = "D14"; # Bank = 0, Pin name = IO_L65P_SCP3,      	Sch name = SW1
+ NET "red_switch" LOC = "C14"; # Bank = 0, Pin name = IO_L65N_SCP2,      	Sch name = SW2
+ 
+ //Reset (Push Button)
+ NET "reset" LOC = "P3";  # Bank = 3, Pin name = IO_L2N, 	   		   Sch name = BTND
+ 
+ //CK1in
+ NET "CK1in_p"  LOC = "U16" | IOSTANDARD = LVDS_33; # Bank = 2,  Pin name = IO_L2P_CMPCLK,        	Sch name = EXP-IO1_P, VmodBB = I01
+ NET "CK1in_n"  LOC = "V16" | IOSTANDARD = LVDS_33; # Bank = 2,  Pin name = IO_L2N_CMPMOSI,        	Sch name = EXP-IO1_N, VmodBB = I015
+ 
+ //Rx3in
+ NET "Rxin3_p"  LOC = "U15" | IOSTANDARD = LVDS_33; # Bank = 2,  Pin name = *IO_L5P,        		Sch name = EXP-IO2_P, VmodBB = I02
+ NET "Rxin3_n"  LOC = "V15" | IOSTANDARD = LVDS_33; # Bank = 2,  Pin name = *IO_L5N,        		Sch name = EXP-IO2_N, VmodBB = I016
+  
+ //Rx2in
+ NET "Rxin2_p"  LOC = "U13" | IOSTANDARD = LVDS_33; # Bank = 2,  Pin name = IO_L14P_D11,        	Sch name = EXP-IO3_P, VmodBB = I03
+ NET "Rxin2_n"  LOC = "V13" | IOSTANDARD = LVDS_33; # Bank = 2,  Pin name = IO_L14N_D12,        	Sch name = EXP-IO3_N, VmodBB = I017
+ 
+ //Rx1in
+ NET "Rxin1_p"  LOC = "M11" | IOSTANDARD = LVDS_33; # Bank = 2,  Pin name = *IO_L15P,        		Sch name = EXP-IO4_P, VmodBB = I04
+ NET "Rxin1_n"  LOC = "N11" | IOSTANDARD = LVDS_33; # Bank = 2,  Pin name = *IO_L15N,        		Sch name = EXP-IO4_N, VmodBB = I018
+ 
+ //Rx0in
+ NET "RXin0_p"  LOC = "R11" | IOSTANDARD = LVDS_33; # Bank = 2,  Pin name = IO_L16P,        		Sch name = EXP-IO5_P, VmodBB = I05
+ NET "RXin0_n"  LOC = "T11" | IOSTANDARD = LVDS_33; # Bank = 2,  Pin name = IO_L16N_VREF,        Sch name = EXP-IO5_N, VmodBB = I019
